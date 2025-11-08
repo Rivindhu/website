@@ -328,7 +328,7 @@ class TodoApp(ft.Column):
 
 To display different lists of tasks depending on their statuses, we could maintain three lists with "All", "Active" and "Completed" tasks. We, however, chose an easier approach where we maintain the same list and only change a task's visibility depending on its status.
 
-In `TodoApp` class we overrided [`before_update()`](/docs/getting-started/custom-controls#before_update) method alled every time when the control is being updated. It iterates through all the tasks and updates their `visible` property depending on the status of the task:
+In `TodoApp` class we overrided [`before_update()`](/docs/getting-started/custom-controls#before_update) method called every time when the control is being updated. It iterates through all the tasks and updates their `visible` property depending on the status of the task:
 
 ```python
 class TodoApp(ft.Column):
